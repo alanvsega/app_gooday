@@ -16,8 +16,8 @@ class _HowAccessState extends State<HowAccess> {
         children: [
           Padding(
             padding: const EdgeInsets.all(24.0),
-            child: Image.asset(
-              'lib/app/assets/images/casuadog.png',
+            child: Image.network(
+              'https://ouch-cdn2.icons8.com/8sS_LJI77dKduTPLEFbE3nSzRIP0i1KZ4poMBzW-lsU/rs:fit:685:456/extend:false/wm:1:re:0:0:0.8/wmid:ouch/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzIx/L2Y1NDhiYmE3LWYx/MzItNGFlMy1hYzVi/LWM1ZWQ5YjY4N2Yx/Ni5wbmc.png',
               width: MediaQuery.of(context).size.width,
               height: 339,
             ),
@@ -47,8 +47,8 @@ class _HowAccessState extends State<HowAccess> {
               height: 62,
               child: OutlinedButton.icon(
                 onPressed: () => {},
-                icon: Image.asset(
-                  'lib/app/asset/images/Google.png',
+                icon: Image.network(
+                  'https://cdn-icons-png.flaticon.com/256/2875/2875404.png',
                   width: 32,
                   height: 32,
                 ),
