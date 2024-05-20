@@ -11,6 +11,8 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  late bool _checkBoxValue = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,7 +66,7 @@ class _LoginState extends State<Login> {
                 borderRadius: BorderRadius.circular(5),
                 borderSide: BorderSide.none,
               ),
-              hintText: 'Digite seu E-mail',
+              hintText: 'Digite seu e-mail',
               isPassword: false,
             ),
             const Padding(
@@ -85,7 +87,7 @@ class _LoginState extends State<Login> {
                 borderRadius: BorderRadius.circular(5),
                 borderSide: BorderSide.none,
               ),
-              hintText: 'Digite sua Senha',
+              hintText: 'Digite sua senha',
               isPassword: true,
             ),
             Padding(
@@ -95,12 +97,14 @@ class _LoginState extends State<Login> {
                   Row(
                     children: [
                       Checkbox(
-                        onChanged: (foo) => {},
-                        value: true,
+                        onChanged: (value) {
+                          setState(() {
+                            _checkBoxValue = value!;
+                          });
+                        },
+                        value: _checkBoxValue,
                         side: const BorderSide(color: ColorStyle.primary),
-                        fillColor: MaterialStateColor.resolveWith(
-                          (states) => ColorStyle.primary,
-                        ),
+                        activeColor: ColorStyle.primary,
                       ),
                       const Text(
                         'Lembrar senha',
@@ -130,7 +134,9 @@ class _LoginState extends State<Login> {
                   marginSize: 0,
                   label: 'Acessar',
                   isPrimary: true,
-                  onPressedButton: () {},
+                  onPressedButton: () {
+                    Navigator.pushNamed(context, '/introduction');
+                  },
                 ),
                 MyButton(
                   buttonProportion: 0.4,

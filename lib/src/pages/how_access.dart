@@ -16,8 +16,8 @@ class _HowAccessState extends State<HowAccess> {
         children: [
           Padding(
             padding: const EdgeInsets.all(24.0),
-            child: Image.network(
-              'https://ouch-cdn2.icons8.com/8sS_LJI77dKduTPLEFbE3nSzRIP0i1KZ4poMBzW-lsU/rs:fit:685:456/extend:false/wm:1:re:0:0:0.8/wmid:ouch/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNzIx/L2Y1NDhiYmE3LWYx/MzItNGFlMy1hYzVi/LWM1ZWQ5YjY4N2Yx/Ni5wbmc.png',
+            child: Image.asset(
+              'lib/assets/how-access.png',
               width: MediaQuery.of(context).size.width,
               height: 339,
             ),
