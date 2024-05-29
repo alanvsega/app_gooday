@@ -1,3 +1,4 @@
+import 'package:app_gooday/src/pages/homepage.dart';
 import 'package:app_gooday/src/pages/how_access.dart';
 import 'package:app_gooday/src/pages/introduction.dart';
 import 'package:app_gooday/src/pages/login.dart';
@@ -17,7 +18,8 @@ class Gooday extends StatelessWidget {
         '/splash': (context) => const SplashScreen(),
         '/how-access': (context) => const HowAccess(),
         '/login': (context) => const Login(),
-        '/introduction': (context) => const Introduction()
+        '/introduction': (context) => const Introduction(),
+        '/home': (context) => const HomePage(),
       },
     );
   }

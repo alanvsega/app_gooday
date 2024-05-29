@@ -35,7 +35,7 @@ class IntroPage extends StatelessWidget {
           ),
           Container(
             height: MediaQuery.of(context).size.height / 2,
-            width: MediaQuery.of(context).size.width,
+            width: MediaQuery.of(context).size.width - 4,
             decoration: const BoxDecoration(
               color: ColorStyle.backgroundPage,
               borderRadius: BorderRadius.only(
